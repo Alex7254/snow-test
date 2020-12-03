@@ -12,7 +12,7 @@ main {
   position: relative;
 }
 
-.snow-back {
+.snow-med {
   background: url(https://designshack.net/tutorialexamples/letitsnow/snow.png);
   background-repeat: repeat;
   height: 100vh;
@@ -20,9 +20,9 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  animation: snowOne 12s infinite linear;
+  animation: snowMed 12s infinite linear;
 }
-.snow-mid {
+.snow-small {
   background: url(https://designshack.net/tutorialexamples/letitsnow/snow.png);
   background-repeat: repeat;
   height: 100vh;
@@ -30,10 +30,10 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  animation: snowTwo 11s infinite linear;
+  animation: snowSm 11s infinite linear;
   background-size: 320px;
 }
-.snow-front {
+.snow-big {
   background: url(https://designshack.net/tutorialexamples/letitsnow/snow.png);
   background-repeat: repeat;
   height: 100vh;
@@ -41,12 +41,12 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  animation: snowThree 14s infinite linear;
+  animation: snowBg 14s infinite linear;
   background-size: 650px;
   filter: blur(1px);
 }
 
-@keyframes snowOne {
+@keyframes snowMed {
   0% {
     background-position: 0px 0px;
   }
@@ -54,15 +54,15 @@ main {
     background-position: 100px 750px;
   }
 }
-@keyframes snowTwo {
+@keyframes snowSm {
   0% {
     background-position: 0px -100px;
   }
   100% {
-    background-position: 0px 750px;
+    background-position: 100px 750px;
   }
 }
-@keyframes snowThree {
+@keyframes snowBg {
   0% {
     background-position: 10px 100px;
   }
